@@ -1,0 +1,47 @@
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col *ngFor='let contact of contacts' sizeMd='4' sizeXs='12'>
+        <ion-card>
+          <img src="{{contact.image}}" />
+          <ion-card-header>
+            <ion-card-subtitle>{{contact.name}}</ion-card-subtitle>
+            <ion-card-title>
+              <ion-item class='clickable'>
+                <ion-icon name="call" slot='start'></ion-icon> {{contact.phone}}
+              </ion-item>
+            </ion-card-title>
+            <ion-card-title>
+              <ion-item class='clickable'>
+                <ion-icon name="mail" slot='start'></ion-icon> {{contact.email}}
+              </ion-item>
+            </ion-card-title>
+            <ion-card-title>
+              <ion-item routerLink='/edit/{{contact.id}}' class='clickable'>
+                <ion-icon name="create" slot='start' detail></ion-icon> Editar
+              </ion-item>
+            </ion-card-title>
+            <ion-card-title>
+              <ion-item (click)='delete(contact)' class='clickable'>
+                <ion-icon name="trash" slot='start' detail></ion-icon> Remover
+              </ion-item>
+            </ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-label>
+              {{contact.address}} <br>
+              {{contact.cpf}}
+            </ion-label>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-fab routerLink='/edit/0' vertical='bottom' horizontal='end' slot='fixed'>
+    <ion-fab-button color='success'>
+      <ion-icon name='add-circle-outline'></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+</ion-content>

@@ -1,0 +1,50 @@
+<ion-content class="ion-padding">
+  <ion-grid>
+    <ion-row class="ion-justify-content-center">
+      <ion-col sizeXs="12" sizeMd="6">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>
+              Contato
+            </ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <form *ngIf='form' [formGroup]="form">
+              <ion-list lines="none">
+                <ion-item>
+                  <ion-label position="floating">Id</ion-label>
+                  <ion-input disabled type="text" formControlName="id"></ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-label position="floating">Nome</ion-label>
+                  <ion-input type="text" formControlName="name"></ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-label position="floating">Email</ion-label>
+                  <ion-input type="text" formControlName="email"></ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-label position="floating">Telefone</ion-label>
+                  <ion-input mask='NNNNN-NNNN' type="text" formControlName="phone"></ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-label position="floating">Endereço</ion-label>
+                  <ion-input type="text" formControlName="address"></ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-label position="floating">CPF</ion-label>
+                  <ion-input mask='NNN.NNN.NNN-NN' type="text" formControlName="cpf"></ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-label position="floating">Imagem</ion-label>
+                  <ion-input type="text" formControlName="image"></ion-input>
+                </ion-item>
+              </ion-list>
+            </form>
+            <ion-button (click)='add()' [disabled]='!form.valid' expand="block">Salvar</ion-button>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

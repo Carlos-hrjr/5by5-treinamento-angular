@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot='start'>
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      <ion-item routerLink='/' class='clickable'>
+        Lista de contatos
+      </ion-item>
+    </ion-title>
+    <ion-buttons slot='end'>
+      <ion-button (click)='logout()'>
+        <ion-icon slot='icon-only' name='exit'></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+
+  <ion-content>
+    <ion-router-outlet></ion-router-outlet>
+  </ion-content>

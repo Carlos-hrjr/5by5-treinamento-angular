@@ -1,0 +1,175 @@
+{
+    "id": "mockoon_export",
+    "appVersion": "1.4.0",
+    "checksum": "404732100e472e0098dff237611a4570",
+    "subject": "full",
+    "data": [
+        {
+            "uuid": "5509c560-cf39-11e9-b227-ebe7df4c4eeb",
+            "name": "New environment",
+            "endpointPrefix": "",
+            "latency": 0,
+            "port": 3000,
+            "routes": [
+                {
+                    "uuid": "6c741110-d0d8-11e9-9e47-d90486c498cd",
+                    "documentation": "",
+                    "method": "post",
+                    "endpoint": "accounts/authenticate",
+                    "body": "{\n    \"user\": \"teste\",\n    \"name\": \"testeste\",\n    \"email\": \"teste@testecom\",\n    \"roles\": [\"user\", \"manager\"],\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c\"\n}",
+                    "latency": 1500,
+                    "statusCode": "200",
+                    "headers": [
+                        {
+                            "key": "",
+                            "value": ""
+                        }
+                    ],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                },
+                {
+                    "uuid": "9bc0ac60-d57b-11e9-a0de-d7e917e4a887",
+                    "documentation": "contacts",
+                    "method": "get",
+                    "endpoint": "contacts",
+                    "body": "[\n    {\n    \"id\": 1,\n    \"name\": \"Joana\",\n    \"email\": \"joana@email.com\",\n    \"cpf\": \"999.999.999-99\",\n    \"phone\": \"(99)99999-9999\",\n    \"address\": \"Rua da casa da mãe Joana\",\n    \"image\": \"https://picsum.photos/600/600\"\n    },\n    {\n    \"id\": 2,\n    \"name\": \"Joaninha\",\n    \"email\": \"joaninha@email.com\",\n    \"cpf\": \"999.999.999-99\",\n    \"phone\": \"(99)99999-9999\",\n    \"address\": \"Rua da casa da mãe Joana\",\n    \"image\": \"https://picsum.photos/600/600\"\n    },\n    {\n    \"id\": 3,\n    \"name\": \"Contato\",\n    \"email\": \"contato@email.com\",\n    \"cpf\": \"999.999.999-99\",\n    \"phone\": \"(99)99999-9999\",\n    \"address\": \"Rua do contato\",\n    \"image\": \"https://picsum.photos/600/600\"\n    },\n    {\n    \"id\": 4,\n    \"name\": \"Contatos 2\",\n    \"email\": \"contatos2@email.com\",\n    \"cpf\": \"999.999.999-99\",\n    \"phone\": \"(99)99999-9999\",\n    \"address\": \"Rua da casa da mãe Joana\",\n    \"image\": \"https://picsum.photos/600/600\"\n    },\n    {\n    \"id\": 5,\n    \"name\": \"Contatos 3\",\n    \"email\": \"contatos3@email.com\",\n    \"cpf\": \"999.999.999-99\",\n    \"phone\": \"(99)99999-9999\",\n    \"address\": \"Rua da casa da mãe Joana\",\n    \"image\": \"https://picsum.photos/600/600\"\n    },\n    {\n    \"id\": 6,\n    \"name\": \"Contato 4\",\n    \"email\": \"contato4@email.com\",\n    \"cpf\": \"999.999.999-99\",\n    \"phone\": \"(99)99999-9999\",\n    \"address\": \"Rua da casa da mãe Joana\",\n    \"image\": \"https://picsum.photos/600/600\"\n    }\n]",
+                    "latency": 1000,
+                    "statusCode": "200",
+                    "headers": [
+                        {
+                            "key": "",
+                            "value": ""
+                        }
+                    ],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                },
+                {
+                    "uuid": "2975b0a0-d58b-11e9-a0de-d7e917e4a887",
+                    "documentation": "",
+                    "method": "get",
+                    "endpoint": "contacts/1",
+                    "body": "{\n    \"id\": 1,\n    \"name\": \"Joana\",\n    \"email\": \"joana@email.com\",\n    \"cpf\": \"999.999.999-99\",\n    \"phone\": \"(99)99999-9999\",\n    \"address\": \"Rua da casa da mãe Joana\",\n    \"image\": \"https://picsum.photos/600/600\"\n}",
+                    "latency": 0,
+                    "statusCode": "200",
+                    "headers": [
+                        {
+                            "key": "",
+                            "value": ""
+                        }
+                    ],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                },
+                {
+                    "uuid": "7a94cd90-d590-11e9-a0de-d7e917e4a887",
+                    "documentation": "",
+                    "method": "post",
+                    "endpoint": "contacts",
+                    "body": "{\n    \"message\": \"Contato cadastrado com sucesso!\",\n    \"success\": true,\n    \"data\": {\n        \"id\": \"1\"\n    }\n}",
+                    "latency": 1000,
+                    "statusCode": "200",
+                    "headers": [
+                        {
+                            "key": "",
+                            "value": ""
+                        }
+                    ],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                },
+                {
+                    "uuid": "e01f7ea0-d593-11e9-a0de-d7e917e4a887",
+                    "documentation": "",
+                    "method": "delete",
+                    "endpoint": "contacts/1",
+                    "body": "{\n    \"message\": \"Contato removido com sucesso!\",\n    \"success\": true,\n    \"data\": {\n        \"id\": \"1\"\n    }\n}",
+                    "latency": 0,
+                    "statusCode": "200",
+                    "headers": [
+                        {
+                            "key": "",
+                            "value": ""
+                        }
+                    ],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                },
+                {
+                    "uuid": "81205020-d596-11e9-a0de-d7e917e4a887",
+                    "documentation": "",
+                    "method": "post",
+                    "endpoint": "accounts",
+                    "body": "{\n    \"message\": \"Usuário cadastrado com sucesso!\",\n    \"success\": true,\n    \"data\": {\n        \"id\": \"1\"\n    }\n}",
+                    "latency": 0,
+                    "statusCode": "200",
+                    "headers": [
+                        {
+                            "key": "",
+                            "value": ""
+                        }
+                    ],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                },
+                {
+                    "uuid": "1ca58960-d64c-11e9-be57-536cbf337171",
+                    "documentation": "",
+                    "method": "put",
+                    "endpoint": "accounts/1",
+                    "body": "{\n    \"message\": \"Senha alterada com sucesso!\",\n    \"success\": true,\n    \"data\": {\n        \"id\": \"1\"\n    }\n}",
+                    "latency": 0,
+                    "statusCode": "200",
+                    "headers": [
+                        {
+                            "key": "",
+                            "value": ""
+                        }
+                    ],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                },
+                {
+                    "uuid": "64791430-d65d-11e9-be57-536cbf337171",
+                    "documentation": "",
+                    "method": "put",
+                    "endpoint": "contacts/1",
+                    "body": "{\n    \"message\": \"Contato alterado com sucesso!\",\n    \"success\": true,\n    \"data\": {\n        \"id\": \"1\"\n    }\n}",
+                    "latency": 0,
+                    "statusCode": "200",
+                    "headers": [
+                        {
+                            "key": "",
+                            "value": ""
+                        }
+                    ],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                }
+            ],
+            "proxyMode": false,
+            "proxyHost": "",
+            "https": false,
+            "cors": true,
+            "headers": [
+                {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "key": "Access-Control-Allow-Origin",
+                    "value": "*"
+                },
+                {
+                    "key": "Access-Control-Expose-Headers",
+                    "value": "Origin, X-Requested-With, Content-Type, Accept"
+                },
+                {
+                    "key": "Access-Control-Allow-Methods",
+                    "value": "GET, POST, PUT, DELETE, OPTION"
+                }
+            ]
+        }
+    ]
+}
